@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/*scroll pequeno*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1c24;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #121218;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.navbar {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100vw;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100vw;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button {
+  background: linear-gradient(90deg, #7B2ED9, #EC4899);
+  background-size: 200% auto;
+}
+
+.button:hover {
+  animation: shine 5s linear infinite; 
+}
+
+.button:active {
+  animation: click 0.10s; 
+}
+
+/*transparencia libras rank*/
+.transparent_libras {
+  opacity: 0.6; 
+}
+.transparent_rankxp {
+  opacity: 0.4; 
+}
+
+.transparent_events {
+  opacity: 0.4; 
+}
+
+/*efeito gradient*/
+@keyframes gradient {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+
+.gradient-text {
+  background: linear-gradient(270deg, #F46737 0%, #945DD6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: gradient 3s ease infinite;
+}
+
+/*Efeito do footer contato
+
+@keyframes gradient-x {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease infinite;
+}
+*/
+
+/*Efeito glitch evi*/

@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+
+.role-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.role-container h2 {
+    color: rgb(221, 215, 215);
+    font-size: 30px;
+    margin: 14px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+.users-container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.user-container {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 14px;
+    transition: transform 0.4s linear;
+    cursor: pointer;
+}
+
+.user-container .name {
+    color: #ADB7BE;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.user-container .imgavatar {
+    border-radius: 50%;
+    width: 110px;
+    margin-bottom: 10px;
+    transition: all 0.3s linear;
+}
+
+.hover-user-container:hover {
+    transition: transform 0.4s linear;
+    transform: translateY(-5px);
+}
+
+.hover-user-container:hover .imgavatar {
+    transition: border-radius 0.3s linear;
+    border-radius: 35%;
+}
+
+/* userinfo */
+
+/*
+.discord-card {
+    background: hsla(0, 0%, 5%, .75);
+    border-radius: 20px;
+    bottom: 0;
+    height: 500px;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px
+} */
+.userinfo {
+    background: rgb(14, 15, 17);
+    border-radius: 15px;
+    bottom: auto;
+    top: 30%;   /*Centralizar verticalmente */
+    /*left: 50%;   Centralizar horizontalmente */
+    width: 310px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    cursor: default;
+    opacity: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(42, 31, 86, 0.4) 0px 5px, rgba(42, 31, 86, 0.3) 0px 10px, rgba(42, 31, 86, 0.2) 0px 15px, rgba(42, 31, 86, 0.1) 0px 20px, rgba(42, 31, 86, 0.05) 0px 25px, rgba(0, 0, 0, 0.56) 0px 22px 70px 4px
+}
+
+.banner_imgslw {
+    align-items: flex-end;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    opacity: .75
+}
+
+.banner_imgslw img {
+    height: 100%;
+    object-fit: cover;
+    width: 114%
+}
+
+
+.avatar_imgslw {
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000, inset 0 0 0 5px #000, inset 0 0 0 5px #000, inset 0 0 0 5px #000;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+    width: 100px
+}
+
+.avatar_imgslw img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.userinfo .avatar_imgslw {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.userinfo .sociais {
+    width: 100%;
+}
+
+/*animação entrada*/
+
+.role-container:last-child .userinfo {
+    transform: translate(50px, -200px);
+    animation: last-child-openUserInfo 0.5s ease 0.3s;
+}
+
+.open {
+    animation: openUserInfo 0.5s ease 0.3s;
+    display: flex;
+}
+
+
+
+.userinfo .usertag {
+    display: inherit;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: text;
+    color: rgb(236, 236, 236);
+    font-size: 23px;
+    margin-top: -45px;
+}
+
+.userinfo .userinformacoes {
+    display: inherit;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    cursor: text;
+    color: rgb(236, 236, 236);
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.userinfo .userid {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: rgb(236, 236, 236, 0.8);
+    display: inherit;
+    text-align: center;
+    cursor: text;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.userinfo .userjoined {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: rgb(236, 236, 236, 0.8);
+    padding: 8px;
+    display: inherit;
+    text-align: center;
+    cursor: text;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.userinfo .usercontributions {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: rgb(236, 236, 236, 0.8);
+    padding: 8px;
+    display: inherit;
+    text-align: center;
+    cursor: text;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+
+.userinfo .userocupacao {
+    display: inherit;
+    text-align: center;
+    cursor: text;
+    color: rgb(236, 236, 236);
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.userinfo .userocupacoes {
+    display: inherit;
+    text-align: center;
+    cursor: text;
+    color: rgb(236, 236, 236);
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.userinfo .userprojetos {
+    display: inherit;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: text;
+    color: rgb(236, 236, 236);
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.userinfo .userpjs {
+    display: inherit;
+    text-align: center;
+    cursor: text;
+    color: rgb(236, 236, 236);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+
+.userinfo .linha {
+    padding: 5px;
+    border-top: 1px solid rgb(51, 53, 63, 0.5);
+    width: 260px;
+    display: inherit;
+    text-align: center;
+    cursor: text;
+    color: rgb(236, 236, 236);
+    font-size: 5px;
+    margin-top: 15px;
+}
+
+
+.userinfo .userid .font_id {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: rgb(236, 236, 236, 0.8);
+}
+
+.userinfo .userocupacao .font_ocupacao {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    color: rgb(236, 236, 236);
+}
+
+.userinfo .userocupacoes .font_ocupacoes {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: rgba(236, 236, 236, 0.9);
+    background-color: rgba(54, 57, 63, 0.5);
+    border-radius: 9px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); 
+    padding: 4px 8px; 
+}
+
+.userinfo .userjoined .font_joined {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: rgb(236, 236, 236, 0.8);
+}
+
+.userinfo .usercontributions .font_contributions {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: rgb(236, 236, 236, 0.8);
+}
+
+
+.userinfo .openURL {
+    margin-bottom: 0;
+    margin-left: auto;
+    transform: translateY(-6px);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.userinfo .openURL:hover {
+    opacity: 1;
+}
+
+.userinfo .more {
+    color: #7caaff;
+    margin-left: auto;
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.userinfo .more:hover {
+    text-decoration: underline;
+}
+
+.description {
+    margin-top: 10px;
+    color: rgb(194, 193, 193);
+    cursor: text;
+}
+
+.sociais {
+    border-top: 1px solid rgba(255, 255, 255, 0.055);
+    margin-top: 10px;
+}
+
+.sociais h4 {
+    margin-top: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+.sociais ul {
+    margin-top: 10px;
+}
+
+.sociais ul li {
+    margin-bottom: 6px;
+    display: flex;
+}
+
+.sociais ul li p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+}
+
+.sociais ul li img {
+    width: 20px;
+    border-radius: 0;
+    margin-right: 5px;
+}
+
+.userinfo_close {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.another-medias {
+    background: hsla(0, 0%, 5%, 0.75);
+    border: 5px solid hsla(0, 0%, 5%, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    width: 130px
+}
+
+.another-medias svg {
+    fill: #fff;
+    height: 25px;
+    margin: 10px 10px 10;
+    top: -35px;
+    width: 33px
+}
+
+.another-medias #spotify:hover {
+    fill: #1ed760;
+    cursor: pointer
+}
+
+.another-medias #instagram:hover {
+    fill: #e1306c;
+    cursor: pointer
+}
+
+.another-medias #twitter:hover {
+    fill: #47c8ff;
+    cursor: pointer
+}

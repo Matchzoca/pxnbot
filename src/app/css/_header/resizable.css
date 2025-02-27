@@ -1,0 +1,32 @@
+@media screen and (max-width: 888px) {
+    header ul li.header-buttons {
+        margin: 0 17px;
+        
+    }
+}
+
+@media screen and (max-width: 977px) {
+    header ul {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    header ul li.header-buttons {
+        display: none;
+       
+    }
+
+    header ul .edit-logo {
+        order: 1;
+    }
+
+    img#open-close-button {
+        display: inline-block;
+        order: 2;
+        padding-left: 500px;
+    }
+
+    .mobile-header img#open-close-button {
+        display: inline-block;
+    }
+}

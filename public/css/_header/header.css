@@ -1,0 +1,127 @@
+/* header principal */
+
+header {
+    background-color: rgb(18, 18, 18);
+    border-bottom: 1px solid rgb(51, 53, 63);
+    width: 100%;
+    padding: 8px 0;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ADB7BE;
+    /* margin-left: 480px; */
+}
+
+/* logo da Slw do canto esquerdo do header */
+header ul .edid-logo img {
+    margin-right: 500px;
+    width: 220px;
+}
+
+/* faz com que ela fique no canto */
+header ul .edid-logo {
+    margin-right: auto;
+    margin-left: 90px;
+}
+
+/* imagem do avatar do usuário */
+header ul .user-avatar a img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+/* faz com que ele fique no canto */
+header ul .right-margin {
+    
+    margin-right: 83px;
+    margin-left: auto;
+}
+
+/* faz com que a ul fique do mesmo tamanho que o header */
+header ul {
+    
+    width: 100%;
+    height: 100%;
+}
+
+/* define o tamanho e a distância entre os itens do header*/
+header ul li {
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 21px;
+}
+
+header ul li a {
+    padding: 0 5px;
+    font-family: 'Segoe UI', 'Roboto', sans-serif, arial;
+    font-size: 19px;
+    color: #ADB7BE;
+}
+
+/* faz aparecer aquele "tracinho" do hover */
+header ul li a:hover {
+    transition: all .3s ease-in-out;
+    border-color: #ADB7BE;
+    color: rgb(130, 130, 130);
+    text-shadow: 2px 2px 4px #352727;
+    transform: skewX(-20deg);
+}
+
+
+
+/* painel lateral para celular */
+div#mobile-header {
+    display: none;
+    background-color: rgb(18, 18, 18);
+    position:fixed;
+    height: 300px;
+    width: 200px;
+    z-index: 2;
+    top: 0;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: mobileHeaderOpen 0.2s linear forwards;
+}
+
+div#ofuscation {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.349);
+    height: 100%;
+    width: 100%;
+}
+
+div#mobile-header li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 21px;
+}
+
+div#mobile-header li a {
+    padding: 0 5px;
+    border-bottom: 1px solid transparent;
+    font-family: 'Segoe UI', 'Roboto', sans-serif, arial;
+    font-size: 23px;
+    color: white;
+}
+
+div#mobile-header li a:hover {
+    transition: border-color .3s linear;
+    border-color: white;
+}
+
+
+img#open-close-button {
+    display: none;
+    cursor: pointer;
+    margin-right: auto;
+}
