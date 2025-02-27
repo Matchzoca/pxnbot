@@ -14,17 +14,13 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
-    colors: {
-      ...colors,
-      primary: colors.purple,
-      secondary: colors.pink,
-      sky: colors.sky,
-      stone: colors.stone,
-      neutral: colors.neutral,
-      gray: colors.gray,
-      slate: colors.slate,
-    },
+      colors: {
+        primary: colors.purple,
+        secondary: colors.pink,
+        current: 'currentColor',
+        transparent: 'transparent',
+      }
+    }
   },
   plugins: [],
 };
