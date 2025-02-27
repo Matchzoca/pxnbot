@@ -31,7 +31,7 @@ const projectsData = [
     //image: "/images/projects/3.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "./images/projectsCmds/CmdCasar.png",
+    previewPXN: "/images/projectsCmds/CmdCasar.png",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const projectsData = [
     //image: "/images/projects/6.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";catioro {mensagem} /catioro voce é?",
-    previewPXN: "../../images/projectsCmds/CmdCatioro.png",
+    previewPXN: "../../../images/projectsCmds/CmdCatioro.png",
   },
   {
     id: 7,
