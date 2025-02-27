@@ -13,7 +13,7 @@ const projectsData = [
     //image: "/images/projects/1.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";minerar",
-    previewPXN: "../../images/projectsCmds/CmdMinerar.png",
+    previewPXN: "../images/projectsCmds/CmdMinerar.png",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projectsData = [
     //image: "/images/projects/2.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "../../images/projectsCmds/CmdApostar.png",
+    previewPXN: "././images/projectsCmds/CmdApostar.png",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projectsData = [
     //image: "/images/projects/3.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "../../images/projectsCmds/CmdCasar.png",
+    previewPXN: "./images/projectsCmds/CmdCasar.png",
   },
   {
     id: 4,
