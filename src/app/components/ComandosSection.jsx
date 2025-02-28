@@ -22,7 +22,7 @@ const projectsData = [
     //image: "/images/projects/2.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "././images/projectsCmds/CmdApostar.png",
+    previewPXN: "/images/projectsCmds/CmdApostar.png",
   },
   {
     id: 3,
