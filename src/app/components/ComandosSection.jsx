@@ -21,7 +21,7 @@ const projectsData = [
     description: "Desafie a sorte com o comando apostar! Ganhe muito ou perca tudo em um instante!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "./images/projectsCmds/CmdApostar.png", 
+    previewPXN: "/images/projectsCmds/CmdApostar.png", 
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const projectsData = [
     description: "Use o comando casar com a sua alma gêmea e celebre o amor no Discord!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "../images/projectsCmds/CmdCasar.png", 
+    previewPXN: "/images/projectsCmds/CmdCasar.png", 
   },
   {
     id: 4,
