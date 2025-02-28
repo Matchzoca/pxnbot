@@ -13,7 +13,7 @@ const projectsData = [
     //image: "/images/projects/1.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";minerar",
-    previewPXN: "../images/projectsCmds/CmdMinerar.png",
+    previewPXN: "./images/projectsCmds/CmdMinerar.png",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const projectsData = [
     description: "Use o comando casar com a sua alma gêmea e celebre o amor no Discord!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "/images/projectsCmds/CmdCasar.png", // Caminho corrigido
+    previewPXN: "./././images/projectsCmds/CmdCasar.png", // Caminho corrigido
   },
   {
     id: 4,
