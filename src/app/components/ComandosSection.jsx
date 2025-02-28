@@ -11,10 +11,9 @@ const projectsData = [
     id: 1,
     title: "⛏️ /Minerar",
     description: `Minere para conseguir cristais e minerios e consiga money trabalhando como minerador`,
-    //image: "/images/projects/1.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";minerar",
-    previewPXN: "/images/projectsCmds/CmdMinerar.png",
+    previewPXN: "/images/projectsCmds/CmdMinerar.png", 
   },
   {
     id: 2,
@@ -22,7 +21,7 @@ const projectsData = [
     description: "Desafie a sorte com o comando apostar! Ganhe muito ou perca tudo em um instante!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "/images/projectsCmds/CmdApostar.png", // Caminho corrigido
+    previewPXN: "/images/projectsCmds/CmdApostar.png", 
   },
   {
     id: 3,
@@ -30,7 +29,7 @@ const projectsData = [
     description: "Use o comando casar com a sua alma gêmea e celebre o amor no Discord!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "./././images/projectsCmds/CmdCasar.png", // Caminho corrigido
+    previewPXN: "/images/projectsCmds/CmdCasar.png", 
   },
   {
     id: 4,
@@ -57,7 +56,7 @@ const projectsData = [
     //image: "/images/projects/6.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";catioro {mensagem} /catioro voce é?",
-    previewPXN: "../../../images/projectsCmds/CmdCatioro.png",
+    previewPXN: "/images/projectsCmds/CmdCatioro.png",
   },
   {
     id: 7,
