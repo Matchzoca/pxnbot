@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 
 const projectsData = [
@@ -13,7 +14,7 @@ const projectsData = [
     //image: "/images/projects/1.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";minerar",
-    previewPXN: "./images/projectsCmds/CmdMinerar.png",
+    previewPXN: "/images/projectsCmds/CmdMinerar.png",
   },
   {
     id: 2,
