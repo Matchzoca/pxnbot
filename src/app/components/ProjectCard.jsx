@@ -41,8 +41,10 @@ const ProjectCard = ({ title, description, exemplo_cmd, previewPXN }) => {
     <Image 
       src={previewPXN}
       alt={`Preview do comando ${title}`}
-      fill
+      width={500}
+      height={300}
       style={{ objectFit: 'contain', borderRadius: '10px' }}
+      priority
     />
   </div>
 ) : (
