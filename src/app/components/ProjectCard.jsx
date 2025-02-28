@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
-import Image from "next/image"; // Importando o componente Image
+import Image from "next/image";
 
 const ProjectCard = ({ title, description, exemplo_cmd, previewPXN }) => {
   const [linkText, setLinkText] = useState("Como usar");
@@ -37,14 +37,7 @@ const ProjectCard = ({ title, description, exemplo_cmd, previewPXN }) => {
             <div className="bg-[#0f0f0f] bg-opacity-100 rounded-lg shadow-2xl max-w-md w-full space-y-4 p-6" style={{ boxShadow: ' rgba(42, 31, 86, 0.4) 0px 5px, rgba(42, 31, 86, 0.3) 0px 10px, rgba(42, 31, 86, 0.2) 0px 15px, rgba(42, 31, 86, 0.1) 0px 20px, rgba(42, 31, 86, 0.05) 0px 25px, rgba(0, 0, 0, 0.56) 0px 22px 70px 4px' }}> 
               <h2 className="text-2xl">Preview do Comando</h2>
               {previewPXN ? (
-                <Image
-  src={previewPXN} // Remova a condicional, pois o caminho já está correto
-  alt="Preview"
-  layout="responsive"
-  width={500}
-  height={500}
-  style={{ borderRadius: "10px" }}
-/>
+                <Image src={previewPXN.startsWith('/') ? previewPXN : `/${previewPXN}`} alt="Preview" layout="responsive" width={500} height={500} style={{ borderRadius: '10px' }} />
               ) : (
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px' }}>
                   <span style={{ fontSize: '20px', color: '#ccc' }}>Sem imagem</span>
