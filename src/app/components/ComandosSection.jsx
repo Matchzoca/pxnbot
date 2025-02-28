@@ -19,19 +19,17 @@ const projectsData = [
     id: 2,
     title: "🤑 /Apostar",
     description: "Desafie a sorte com o comando apostar! Ganhe muito ou perca tudo em um instante!",
-    //image: "/images/projects/2.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "/images/projectsCmds/CmdApostar.png",
+    previewPXN: "/images/projectsCmds/CmdApostar.png", // Caminho corrigido
   },
   {
     id: 3,
     title: "💍 /Casar",
     description: "Use o comando casar com a sua alma gêmea e celebre o amor no Discord!",
-    //image: "/images/projects/3.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "/images/projectsCmds/CmdCasar.png",
+    previewPXN: "/images/projectsCmds/CmdCasar.png", // Caminho corrigido
   },
   {
     id: 4,
