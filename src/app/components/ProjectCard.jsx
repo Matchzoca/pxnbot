@@ -38,14 +38,7 @@ const ProjectCard = ({ title, description, exemplo_cmd, previewPXN }) => {
             <h2 className="text-2xl">Preview do Comando</h2>
             {previewPXN ? (
   <div className="relative w-full h-[300px]">
-    <Image 
-      src={previewPXN}
-      alt={`Preview do comando ${title}`}
-      width={500}
-      height={300}
-      style={{ objectFit: 'contain', borderRadius: '10px' }}
-      priority
-    />
+    
   </div>
 ) : (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px' }}>
