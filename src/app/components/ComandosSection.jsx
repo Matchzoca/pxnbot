@@ -13,7 +13,7 @@ const projectsData = [
     description: `Minere para conseguir cristais e minerios e consiga money trabalhando como minerador`,
     tag: ["All", "Economia"],
     exemplo_cmd: ";minerar",
-    previewPXN: "/images/projectsCmds/CmdMinerar.png", 
+    previewPXN: "/images/projectsCmds/CmdMinerar.png", // Caminho corrigido
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projectsData = [
     description: "Desafie a sorte com o comando apostar! Ganhe muito ou perca tudo em um instante!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "/images/projectsCmds/CmdApostar.png", 
+    previewPXN: "/images/projectsCmds/CmdApostar.png", // Caminho corrigido
   },
   {
     id: 3,
@@ -29,13 +29,12 @@ const projectsData = [
     description: "Use o comando casar com a sua alma gêmea e celebre o amor no Discord!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "/images/projectsCmds/CmdCasar.png", 
+    previewPXN: "/images/projectsCmds/CmdCasar.png", // Caminho corrigido
   },
   {
     id: 4,
     title: "🪙 /Caraecoroa",
     description: "Teste sua sorte com o comando cara e coroa! Uma moeda virtual decide seu destino!",
-    //image: "/images/projects/4.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";caracoroa @menção1",
     previewPXN: "",
@@ -44,7 +43,6 @@ const projectsData = [
     id: 5,
     title: "💘 /Ship",
     description: "Descubra o amor no servidor! Use o comando shipar para ver a compatibilidade entre membros!",
-    //image: "/images/projects/5.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";ship @menção1 @menção2",
     previewPXN: "",
@@ -53,16 +51,14 @@ const projectsData = [
     id: 6,
     title: "🎱 /Catioro - /8ball",
     description: "Fale com o catioro! Use o comando catioro para obter respostas divertidas, como no 8ball!",
-    //image: "/images/projects/6.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";catioro {mensagem} /catioro voce é?",
-    previewPXN: "/images/projectsCmds/CmdCatioro.png",
+    previewPXN: "/images/projectsCmds/CmdCatioro.png", // Caminho corrigido
   },
   {
     id: 7,
     title: "🔒 /lock - /unlock",
     description: "Controle o acesso ao canal! Use lock canal para bloquear e unlock canal para liberar!",
-    //image: "/images/projects/6.png",
     tag: ["All", "Moderação"],
     exemplo_cmd: "/lock {id_channel} or /unlock {id_channel}",
     previewPXN: "", 
@@ -71,13 +67,12 @@ const projectsData = [
     id: 8,
     title: "(Aviso) Comandos faltando",
     description: " Ainda falta 80% dos comandos a serem adicionados aqui, calma ai...",
-    //image: "/images/projects/6.png",
     tag: ["All", "Moderação", "Diversão", "Economia", "Ações", "Novos"],
     exemplo_cmd: "Pixelon está com preguiça :)",
     previewPXN: "", 
   },
-  
 ];
+
 const ComandosSection = () => {
   const [tag, setTag] = useState("All");
   const [PesquisaTerm, setPesquisaTerm] = useState("");
