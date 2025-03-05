@@ -1,4 +1,4 @@
-@keyframes openUserInfo {
+/* @keyframes openUserInfo {
     from {
         display: flex;
         opacity: 0;
@@ -10,6 +10,8 @@
         transform: translateX(0);
     }
 }
+
+*/
 
 @keyframes last-child-openUserInfo {
     from {

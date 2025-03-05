@@ -1,7 +1,8 @@
 class Header{
+    
     /**
-     * causes the side panel to open.
-     */
+    * faz com que o painel lateral abra.
+    */
     static open(){
         document.getElementById('mobile-header').style.display = 'inline-block';
         document.getElementById('ofuscation').style.display = 'inline-block';
@@ -9,8 +10,8 @@ class Header{
     }
 
     /**
-     * causes the side panel to close.
-     */
+    * faz com que o painel lateral feche.
+    */
     static close(){
         document.getElementById('mobile-header').style.display = 'none';
         document.getElementById('ofuscation').style.display = 'none';

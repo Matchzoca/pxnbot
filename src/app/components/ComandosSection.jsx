@@ -4,40 +4,35 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-
 const projectsData = [
   {
     id: 1,
     title: "⛏️ /Minerar",
     description: `Minere para conseguir cristais e minerios e consiga money trabalhando como minerador`,
-    //image: "/images/projects/1.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";minerar",
-    previewPXN: "../../images/projectsCmds/CmdMinerar.png",
+    previewPXN: "/images/projectsCmds/CmdMinerar.png",
   },
   {
     id: 2,
     title: "🤑 /Apostar",
     description: "Desafie a sorte com o comando apostar! Ganhe muito ou perca tudo em um instante!",
-    //image: "/images/projects/2.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "../../images/projectsCmds/CmdApostar.png",
+    previewPXN: "/images/projectsCmds/CmdApostar.png",
   },
   {
     id: 3,
     title: "💍 /Casar",
     description: "Use o comando casar com a sua alma gêmea e celebre o amor no Discord!",
-    //image: "/images/projects/3.png",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "../../images/projectsCmds/CmdCasar.png",
+    previewPXN: "/images/projectsCmds/CmdCasar.png",
   },
   {
     id: 4,
     title: "🪙 /Caraecoroa",
     description: "Teste sua sorte com o comando cara e coroa! Uma moeda virtual decide seu destino!",
-    //image: "/images/projects/4.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";caracoroa @menção1",
     previewPXN: "",
@@ -46,7 +41,6 @@ const projectsData = [
     id: 5,
     title: "💘 /Ship",
     description: "Descubra o amor no servidor! Use o comando shipar para ver a compatibilidade entre membros!",
-    //image: "/images/projects/5.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";ship @menção1 @menção2",
     previewPXN: "",
@@ -55,16 +49,14 @@ const projectsData = [
     id: 6,
     title: "🎱 /Catioro - /8ball",
     description: "Fale com o catioro! Use o comando catioro para obter respostas divertidas, como no 8ball!",
-    //image: "/images/projects/6.png",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";catioro {mensagem} /catioro voce é?",
-    previewPXN: "../../images/projectsCmds/CmdCatioro.png",
+    previewPXN: "/images/projectsCmds/CmdCatioro.png",
   },
   {
     id: 7,
     title: "🔒 /lock - /unlock",
     description: "Controle o acesso ao canal! Use lock canal para bloquear e unlock canal para liberar!",
-    //image: "/images/projects/6.png",
     tag: ["All", "Moderação"],
     exemplo_cmd: "/lock {id_channel} or /unlock {id_channel}",
     previewPXN: "", 
@@ -73,13 +65,12 @@ const projectsData = [
     id: 8,
     title: "(Aviso) Comandos faltando",
     description: " Ainda falta 80% dos comandos a serem adicionados aqui, calma ai...",
-    //image: "/images/projects/6.png",
     tag: ["All", "Moderação", "Diversão", "Economia", "Ações", "Novos"],
     exemplo_cmd: "Pixelon está com preguiça :)",
     previewPXN: "", 
   },
-  
 ];
+
 const ComandosSection = () => {
   const [tag, setTag] = useState("All");
   const [PesquisaTerm, setPesquisaTerm] = useState("");
@@ -112,8 +103,8 @@ const ComandosSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         Meus Comandos :3
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-      <ProjectTag
+      <div className="text-white flex flex-wrap justify-center items-center gap-2 py-6">
+        <ProjectTag
           onClick={identificadorTag}
           name="Novos"
           isSelected={tag === "News"}
@@ -143,13 +134,13 @@ const ComandosSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <div className="relative">
+        <div className="relative w-full sm:w-auto flex-grow sm:flex-grow-0">
           <input 
             type="text" 
             placeholder="Search..." 
             onChange={handleSearchChange} 
             value={PesquisaTerm}
-            className="rounded-full border-2 px-6 py-3 text-xl cursor-pointer text-[#ADB7BE] border-slate-600 hover:border-white"
+            className="w-full rounded-full border-2 px-6 py-3 text-xl cursor-pointer text-[#ADB7BE] border-slate-600 hover:border-white"
           />
           {PesquisaTerm && (
             <button 
