@@ -3,8 +3,6 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import Image from "next/image";
-
 
 const projectsData = [
   {
@@ -13,7 +11,7 @@ const projectsData = [
     description: `Minere para conseguir cristais e minerios e consiga money trabalhando como minerador`,
     tag: ["All", "Economia"],
     exemplo_cmd: ";minerar",
-    previewPXN: "/images/projectsCmds/CmdMinerar.png", // Caminho corrigido
+    previewPXN: "/images/projectsCmds/CmdMinerar.png",
   },
   {
     id: 2,
@@ -21,7 +19,7 @@ const projectsData = [
     description: "Desafie a sorte com o comando apostar! Ganhe muito ou perca tudo em um instante!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";apostar @menção1 @menção2",
-    previewPXN: "/images/projectsCmds/CmdApostar.png", // Caminho corrigido
+    previewPXN: "/images/projectsCmds/CmdApostar.png",
   },
   {
     id: 3,
@@ -29,7 +27,7 @@ const projectsData = [
     description: "Use o comando casar com a sua alma gêmea e celebre o amor no Discord!",
     tag: ["All", "Economia"],
     exemplo_cmd: ";casar @menção",
-    previewPXN: "/images/projectsCmds/CmdCasar.png", // Caminho corrigido
+    previewPXN: "/images/projectsCmds/CmdCasar.png",
   },
   {
     id: 4,
@@ -53,7 +51,7 @@ const projectsData = [
     description: "Fale com o catioro! Use o comando catioro para obter respostas divertidas, como no 8ball!",
     tag: ["All", "Diversão"],
     exemplo_cmd: ";catioro {mensagem} /catioro voce é?",
-    previewPXN: "/images/projectsCmds/CmdCatioro.png", // Caminho corrigido
+    previewPXN: "/images/projectsCmds/CmdCatioro.png",
   },
   {
     id: 7,
@@ -105,8 +103,8 @@ const ComandosSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         Meus Comandos :3
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-      <ProjectTag
+      <div className="text-white flex flex-wrap justify-center items-center gap-2 py-6">
+        <ProjectTag
           onClick={identificadorTag}
           name="Novos"
           isSelected={tag === "News"}
@@ -136,13 +134,13 @@ const ComandosSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <div className="relative">
+        <div className="relative w-full sm:w-auto flex-grow sm:flex-grow-0">
           <input 
             type="text" 
             placeholder="Search..." 
             onChange={handleSearchChange} 
             value={PesquisaTerm}
-            className="rounded-full border-2 px-6 py-3 text-xl cursor-pointer text-[#ADB7BE] border-slate-600 hover:border-white"
+            className="w-full rounded-full border-2 px-6 py-3 text-xl cursor-pointer text-[#ADB7BE] border-slate-600 hover:border-white"
           />
           {PesquisaTerm && (
             <button 
