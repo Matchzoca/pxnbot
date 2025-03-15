@@ -21,8 +21,10 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content={metadata.keywords} />
         <meta name="viewport" content={metadata.viewport} />
         <link rel="icon" href="/favicon.ico" />
-        {/* Opcional: Adicionar uma fonte externa ou ícone */}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
       </head>
       <body className={`${inter.className} layout-body`}>
         <header className="layout-header">
@@ -31,11 +33,19 @@ export default function RootLayout({ children }) {
         </header>
         <main className="layout-main">{children}</main>
         <footer className="layout-footer">
-          <p>- Feito por <span className="footer-author">{metadata.author}</span></p>
+          <p>
+            - Feito por <span className="footer-author">{metadata.author}</span>
+          </p>
           <div className="social-links">
-            <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-            <a href="#" aria-label="GitHub"><i className="fab fa-github"></i></a>
-            <a href="#" aria-label="Discord"><i className="fab fa-discord"></i></a>
+            <a href="#" aria-label="Twitter">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="Discord">
+              <i className="fab fa-discord"></i>
+            </a>
           </div>
         </footer>
       </body>
